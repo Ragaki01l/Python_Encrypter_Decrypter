@@ -1,0 +1,7 @@
+TODO List:
+-Use OS Package to find current working directory
+-Encrypt using MyRSAEncrypt in a while loop
+-Each encrypted file is stored as a JSON file
+-In JSON file, use JSON.dump() with file.write() methods
+-Remove plaintext file using os.remove().
+-MUST ENCODE/DECODE data before writing into JSON file
