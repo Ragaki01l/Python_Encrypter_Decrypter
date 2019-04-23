@@ -160,7 +160,7 @@ def MyRSADecrypt(filepath, cipher, IV, tag, keyEncRSA, ext, RSA_privkey_filepath
     k = key[:32]
     hkey = key[-32:] #need to fix
     
-    m = MydecryptMAC(cipher, k, IV, tag, hkey)
+    m = MyfileDecryptMAC(filepath,cipher, k, IV, tag, hkey, ext)
     print("File successfully Decrypted")
     
     return m
